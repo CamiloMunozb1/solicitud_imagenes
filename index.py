@@ -1,4 +1,4 @@
-
+from funciones.busqueda_imagenes import BuscadorImagenes
 
 while True:
     print("""
@@ -13,7 +13,8 @@ while True:
             print("El campo debe estar completo.")
             break
         elif usuario == "1":
-            print("Opcion a desarrollar.")
+            imagen = BuscadorImagenes()
+            imagen.busqueda_imagen()
         elif usuario == "2":
             print("Opcion a desarrollar.")
         elif usuario == "3":
