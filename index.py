@@ -1,4 +1,5 @@
 from funciones.busqueda_imagenes import BuscadorImagenes
+from funciones.gestor_imagen import GuardarImagen
 
 while True:
     print("""
@@ -16,7 +17,8 @@ while True:
             imagen = BuscadorImagenes()
             imagen.busqueda_imagen()
         elif usuario == "2":
-            print("Opcion a desarrollar.")
+            guardado = GuardarImagen()
+            guardado.guardado_imagen()
         elif usuario == "3":
             print("Gracias por usar y solicitar tus imagenes favoritas.")
             break
