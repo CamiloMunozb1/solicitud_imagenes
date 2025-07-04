@@ -1,8 +1,11 @@
 import requests
+import os
+from dotenv import load_dotenv
 
 class BuscadorImagenes:
     def __init__(self):
-        self.api_key = r"TU_API_KEY"
+        load_dotenv()
+        self.api_key = os.getenv('API_KEY')
     
     def busqueda_imagen(self):
         try:
